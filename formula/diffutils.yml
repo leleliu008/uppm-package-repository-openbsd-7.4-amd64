@@ -1,0 +1,5 @@
+summary: File comparison utilities
+webpage: https://www.gnu.org/software/diffutils
+version: 3.10 
+bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2023.12.08/diffutils-3.10-openbsd-7.4-amd64.tar.xz 
+bin-sha: c8f16be2c4c04d5e99999ca13ac59101ffee8f78655bf080b4b156ae65609770

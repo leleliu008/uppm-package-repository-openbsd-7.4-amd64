@@ -1,0 +1,5 @@
+summary: a command-line tool to get your system information.
+webpage: https://github.com/leleliu008/C-examples
+version: 2023.12.08 
+bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2023.12.08/sysinfo-2023.12.08-openbsd-7.4-amd64.tar.xz 
+bin-sha: d2341a73a21a7c172638dfacd91ed52f84b8322f0556dbbc7cf20405ef5b8edf

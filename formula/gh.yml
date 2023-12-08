@@ -1,0 +1,5 @@
+summary: GitHub official command-line tool
+webpage: https://github.com/cli/cli
+version: 2.38.0 
+bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2023.12.08/gh-2.38.0-openbsd-7.4-amd64.tar.xz 
+bin-sha: a5d0560b5313258c7775b8df5b3eca5039818fa5c82e6ae60f5f7c0127072b88

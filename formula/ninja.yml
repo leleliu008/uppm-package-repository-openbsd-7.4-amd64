@@ -1,0 +1,5 @@
+summary: A small build system with a focus on speed
+webpage: https://ninja-build.org/
+version: 1.11.1 
+bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2023.12.08/ninja-1.11.1-openbsd-7.4-amd64.tar.xz 
+bin-sha: a6b19694663cc1770bd01b8bf14cfc902b9c77d980439633bac37b0d52fa0e71

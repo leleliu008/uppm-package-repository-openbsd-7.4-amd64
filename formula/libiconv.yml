@@ -1,0 +1,5 @@
+summary: charset conversion library
+webpage: https://www.gnu.org/software/libiconv
+version: 1.17 
+bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2023.12.08/libiconv-1.17-openbsd-7.4-amd64.tar.xz 
+bin-sha: fec8a9102e5ef68ba2078ddd50ca24fafcbde8b165bae8e45dd5bb80f7c62424

@@ -1,0 +1,5 @@
+summary: Generate C-based recognizers from regular expressions
+webpage: https://re2c.org/
+version: 3.1 
+bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2023.12.08/re2c-3.1-openbsd-7.4-amd64.tar.xz 
+bin-sha: 15c5116c11d3f9fdcae3ccc6a054d8d1fe1ffde3b829e5167ff820c5f1fb3919
