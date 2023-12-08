@@ -1,0 +1,412 @@
+name: publish
+
+on:
+  workflow_dispatch
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        pkg: [bash, bat, bison, bzip2, b3sum, cmake, coreutils, curl, darkhttpd, diffutils, dos2unix, ed, flex, findutils, gawk, gperf, gm4, gmake, gh, grep, gsed, gtar, gzip, jq, libarchive, lzip, lz4, nasm, ninja, openssl, patchelf, patch, pkgconf, re2c, rsync, swig, sqlite3, tree, uctags, unzip, uppm, xxd, xz, yq, zip, p7zip, zstd, zoxide, base16, base64, bsdtar, sysinfo, easyutils, gettext-tools, xsltproc, libxml2-utils, figlet, lolcat, zlib, libiconv, libyaml, libxml2, jansson]
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: curl -LO https://raw.githubusercontent.com/leleliu008/ppkg/master/ppkg
+      - run: chmod a+x ppkg
+      - run: ./ppkg setup
+      - run: ./ppkg update
+      - run: ./ppkg install openbsd-7.4-amd64/${{ matrix.pkg }} --link-type=static-full
+      - run: ./ppkg pack    openbsd-7.4-amd64/${{ matrix.pkg }}
+
+      - name: create ${{ matrix.pkg }}.yml
+        run: |
+          PACKAGE_SUMMARY="$(./ppkg receipt openbsd-7.4-amd64/${{ matrix.pkg }} summary)"
+          PACKAGE_VERSION="$(./ppkg receipt openbsd-7.4-amd64/${{ matrix.pkg }} version)"
+          PACKAGE_WEB_URL="$(./ppkg receipt openbsd-7.4-amd64/${{ matrix.pkg }} web-url)"
+
+          PACKAGE_BIN_FILENAME="${{ matrix.pkg }}-$PACKAGE_VERSION-openbsd-7.4-amd64.tar.xz"
+
+          PACKAGE_BIN_SHA="$(sha256sum "$PACKAGE_BIN_FILENAME" | cut -d ' ' -f1)"
+
+          PACKAGE_BIN_URL="https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/@TAGNAME@/$PACKAGE_BIN_FILENAME"
+
+          cat > ${{ matrix.pkg }}.yml <<EOF
+          summary: $PACKAGE_SUMMARY
+          webpage: $PACKAGE_WEB_URL
+          version: $PACKAGE_VERSION 
+          bin-url: $PACKAGE_BIN_URL 
+          bin-sha: $PACKAGE_BIN_SHA
+          EOF
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: ${{ matrix.pkg }}
+          path: |
+            ${{ matrix.pkg }}-*-openbsd-7.4-amd64.tar.xz
+            ${{ matrix.pkg }}.yml
+
+
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+
+    env:
+      GH_TOKEN: ${{ github.token }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: bash
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: bat
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: bison
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: bzip2
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: b3sum
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: cmake
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: coreutils
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: curl
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: darkhttpd
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: diffutils
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: dos2unix
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: ed
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: flex
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: findutils
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: gawk
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: gperf
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: re2c
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: gm4
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: gmake
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: gh
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: grep
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: gsed
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: gtar
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: gzip
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: jq
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: libarchive
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: lzip
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: nasm
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: ninja
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: openssl
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: patchelf
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: patch
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: pkgconf
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: rsync
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: swig
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: sqlite3
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: tree
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: uctags
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: unzip
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: uppm
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: xxd
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: xz
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: zip
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: p7zip
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: zstd
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: zoxide
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: base16
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: base64
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: sysinfo
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: easyutils
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: gettext-tools
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: xsltproc
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: libxml2-utils
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: figlet
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: lolcat
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: zlib
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: libiconv
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: libyaml
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: libxml2
+          path: .
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: jansson
+          path: .
+
+
+      - run: ls
+
+      - run: mv *.yml formula/
+
+      - run: sha256sum *.tar.xz > sha256sums.txt
+
+      - name: create notes.md
+        run: |
+          cat > notes.md <<EOF
+          these packages are created by [ppkg](https://github.com/leleliu008/ppkg).
+
+          these packages are statically linked.
+
+          these packages are relocatable which means that you can install them to anywhere.
+
+          ## Environment Variables
+
+          **following environment variables should be set for \`git\` package**
+
+          \`\`\`bash
+          export GIT_EXEC_PATH="\$GIT_INSTALL_DIR/libexec/git-core"
+          export GIT_TEMPLATE_DIR="\$GIT_INSTALL_DIR/share/git-core/templates"
+          \`\`\`
+
+          **following environment variables should be set for \`file\` package**
+
+          \`\`\`bash
+          export MAGIC="\$FILE_INSTALL_DIR/share/misc/magic.mgc"
+          \`\`\`
+
+          ## sha256sum
+
+          \`\`\`
+          $(cat sha256sums.txt)
+          \`\`\`
+          EOF
+
+      - name: publish
+        run: |
+          TAGNAME="$(date +%Y.%m.%d)"
+
+          sed -i "s|@TAGNAME@|$TAGNAME|" formula/*.yml
+
+          gh release create "$TAGNAME" *.tar.xz sha256sums.txt --title "$TAGNAME" --notes-file notes.md
+
+          git config --global user.name  leleliu008
+          git config --global user.email leleliu008@gmail.com
+
+          git add formula
+          git commit -m "publish new version $TAGNAME"
+          git push origin master
