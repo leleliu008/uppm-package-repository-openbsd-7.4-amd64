@@ -8,7 +8,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        pkg: [bash, bat, bison, bzip2, b3sum, cmake, coreutils, curl, darkhttpd, diffutils, dos2unix, ed, flex, findutils, gawk, gperf, gm4, gmake, gh, grep, gsed, gtar, gzip, jq, libarchive, lzip, lz4, nasm, ninja, openssl, patchelf, patch, pkgconf, re2c, rsync, swig, sqlite3, tree, uctags, unzip, uppm, xxd, xz, yq, zip, p7zip, zstd, zoxide, base16, base64, bsdtar, sysinfo, easyutils, gettext-tools, xsltproc, libxml2-utils, figlet, lolcat, zlib, libiconv, libyaml, libxml2, jansson]
+        pkg: [bash, bison, bzip2, cmake, coreutils, curl, darkhttpd, diffutils, dos2unix, ed, flex, findutils, gawk, gperf, gm4, gmake, gh, grep, gsed, gtar, gzip, jq, libarchive, lzip, lz4, nasm, ninja, openssl, patchelf, patch, pkgconf, re2c, rsync, swig, sqlite3, tree, uctags, unzip, uppm, xxd, xz, yq, zip, p7zip, zstd, base16, base64, bsdtar, sysinfo, easyutils, gettext-tools, xsltproc, libxml2-utils, figlet, lolcat, zlib, libiconv, libyaml, libxml2, jansson]
 
     runs-on: ubuntu-latest
 
@@ -17,6 +17,7 @@ jobs:
       - run: chmod a+x ppkg
       - run: ./ppkg setup
       - run: ./ppkg update
+      - run: sed -i 's|-DZSTD_BUILD_SHARED=ON|-DZSTD_BUILD_SHARED=OFF|' ~/.ppkg/repos.d/offical-core/formula/libzstd.yml
       - run: ./ppkg install openbsd-7.4-amd64/${{ matrix.pkg }} --link-type=static-most
       - run: ./ppkg pack    openbsd-7.4-amd64/${{ matrix.pkg }}
 
@@ -65,22 +66,12 @@ jobs:
 
       - uses: actions/download-artifact@v3
         with:
-          name: bat
-          path: .
-
-      - uses: actions/download-artifact@v3
-        with:
           name: bison
           path: .
 
       - uses: actions/download-artifact@v3
         with:
           name: bzip2
-          path: .
-
-      - uses: actions/download-artifact@v3
-        with:
-          name: b3sum
           path: .
 
       - uses: actions/download-artifact@v3
@@ -281,11 +272,6 @@ jobs:
       - uses: actions/download-artifact@v3
         with:
           name: zstd
-          path: .
-
-      - uses: actions/download-artifact@v3
-        with:
-          name: zoxide
           path: .
 
       - uses: actions/download-artifact@v3
