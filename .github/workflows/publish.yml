@@ -8,7 +8,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        pkg: [bash, bison, bzip2, cmake, coreutils, curl, darkhttpd, diffutils, dos2unix, ed, flex, findutils, gawk, gperf, gm4, gmake, gh, grep, gsed, gtar, gzip, jq, libarchive, lzip, lz4, nasm, ninja, openssl, patchelf, patch, pkgconf, re2c, rsync, swig, sqlite3, tree, uctags, unzip, uppm, xxd, xz, yq, zip, p7zip, zstd, base16, base64, bsdtar, sysinfo, easyutils, gettext-tools, xsltproc, libxml2-utils, figlet, lolcat, zlib, libiconv, libyaml, libxml2, jansson]
+        pkg: [bash, bison, bzip2, cmake, coreutils, curl, darkhttpd, diffutils, dos2unix, ed, flex, findutils, gawk, gperf, gm4, gmake, gh, grep, gsed, gtar, gzip, jq, libarchive, lzip, lz4, nasm, ninja, openssl, patchelf, patch, pkgconf, re2c, rsync, swig, sqlite3, tree, uctags, uppm, xxd, xz, yq, zstd, base16, base64, bsdtar, sysinfo, easyutils, gettext-tools, xsltproc, libxml2-utils, figlet, lolcat, zlib, libiconv, libyaml, libxml2, jansson]
 
     runs-on: ubuntu-latest
 
@@ -241,11 +241,6 @@ jobs:
 
       - uses: actions/download-artifact@v3
         with:
-          name: unzip
-          path: .
-
-      - uses: actions/download-artifact@v3
-        with:
           name: uppm
           path: .
 
@@ -257,16 +252,6 @@ jobs:
       - uses: actions/download-artifact@v3
         with:
           name: xz
-          path: .
-
-      - uses: actions/download-artifact@v3
-        with:
-          name: zip
-          path: .
-
-      - uses: actions/download-artifact@v3
-        with:
-          name: p7zip
           path: .
 
       - uses: actions/download-artifact@v3
