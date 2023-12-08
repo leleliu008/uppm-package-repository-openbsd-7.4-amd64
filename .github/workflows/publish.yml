@@ -17,7 +17,7 @@ jobs:
       - run: chmod a+x ppkg
       - run: ./ppkg setup
       - run: ./ppkg update
-      - run: ./ppkg install openbsd-7.4-amd64/${{ matrix.pkg }} --link-type=static-full
+      - run: ./ppkg install openbsd-7.4-amd64/${{ matrix.pkg }} --link-type=static-most
       - run: ./ppkg pack    openbsd-7.4-amd64/${{ matrix.pkg }}
 
       - name: create ${{ matrix.pkg }}.yml
