@@ -1,5 +1,5 @@
 summary: Classic UNIX line editor
 webpage: https://www.gnu.org/software/ed/ed.html
 version: 1.19 
-bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2023.12.08/ed-1.19-openbsd-7.4-amd64.tar.xz 
-bin-sha: 529a51e31d22d539bc60ea8209e53c3272d1aaafeefe0f6434b19be57b4e1f07
+bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2023.12.09/ed-1.19-openbsd-7.4-amd64.tar.xz 
+bin-sha: 7f767f1f7142e945f0dea0d2da09a45037db9bec3951dc692f265095eb1f77b2

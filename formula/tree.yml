@@ -1,5 +1,5 @@
 summary: Display directories as trees (with optional color/HTML output)
 webpage: http://mama.indstate.edu/users/ice/tree
 version: 2.1.1 
-bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2023.12.08/tree-2.1.1-openbsd-7.4-amd64.tar.xz 
-bin-sha: 9638cc57a100e23d3dee0b377c9fc042f83d1cdaf8734d30326c238daece5fbc
+bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2023.12.09/tree-2.1.1-openbsd-7.4-amd64.tar.xz 
+bin-sha: d95893fa3f4df576f86af6ae853bed998e719fd224a6a142c82e16801914777a

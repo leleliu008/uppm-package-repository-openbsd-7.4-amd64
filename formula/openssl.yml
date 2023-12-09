@@ -1,5 +1,5 @@
 summary: Cryptography and SSL/TLS Toolkit
 webpage: https://www.openssl.org/
 version: 3.1.1 
-bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2023.12.08/openssl-3.1.1-openbsd-7.4-amd64.tar.xz 
-bin-sha: 3123bdd6f45f0c4967a5682fbfe09a414de393902ee645b44199776ae3681b2a
+bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2023.12.09/openssl-3.1.1-openbsd-7.4-amd64.tar.xz 
+bin-sha: eed69b1aaa8c87522851fe3eb8e3598a5144c6189b54d11f3740ca41cc082bf1

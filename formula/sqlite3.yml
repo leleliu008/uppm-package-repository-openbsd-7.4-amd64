@@ -1,5 +1,5 @@
 summary: A small, fast, self-contained, high-reliability, full-featured, SQL database engine written in C
 webpage: https://www.sqlite.org/
 version: 3.44.0 
-bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2023.12.08/sqlite3-3.44.0-openbsd-7.4-amd64.tar.xz 
-bin-sha: 9087b887a69b5e0890a783c328b97c6cfc6ae302c398461b7eca5eb5eedb9c18
+bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2023.12.09/sqlite3-3.44.0-openbsd-7.4-amd64.tar.xz 
+bin-sha: 973fe0708f84ceee7775aca656e4fcc6c9ea03d82695e28791b234f68bedd198

@@ -1,5 +1,5 @@
 summary: Multi-format archive and compression library
 webpage: https://www.libarchive.org/
 version: 3.7.2 
-bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2023.12.08/libarchive-3.7.2-openbsd-7.4-amd64.tar.xz 
-bin-sha: 1902a66fe577054180543692b8614475b3beeb0927d7b493b30f58748d339471
+bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2023.12.09/libarchive-3.7.2-openbsd-7.4-amd64.tar.xz 
+bin-sha: e6ad4d24bb571dcbfd865aa89a270ce60558f7f5b6620299b25d4fc30fe8e56b

@@ -1,5 +1,5 @@
 summary: Small static webserver without CGI
 webpage: https://unix4lyfe.org/darkhttpd/
 version: 1.14 
-bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2023.12.08/darkhttpd-1.14-openbsd-7.4-amd64.tar.xz 
-bin-sha: 0a134ba85a9bee9e6cad8a1f718df0e8997f190513bee1ff83c1cdffdeaf9733
+bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2023.12.09/darkhttpd-1.14-openbsd-7.4-amd64.tar.xz 
+bin-sha: 9e5b90a3be06fe17414b79b559e70eb9f62fdc81c3a9f226787ec3740f797f93

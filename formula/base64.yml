@@ -1,5 +1,5 @@
 summary: base64 encoder and decoder
 webpage: https://github.com/leleliu008/C-examples
-version: 2023.12.08 
-bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2023.12.08/base64-2023.12.08-openbsd-7.4-amd64.tar.xz 
-bin-sha: e6b008678f495f76f5f06e96c4bcd2d1762adf542a642b2dcff33319200f32f0
+version: 2023.12.09 
+bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2023.12.09/base64-2023.12.09-openbsd-7.4-amd64.tar.xz 
+bin-sha: 083d01af191fdf361f00c6c4b3d58ea1c90a9d51eb2494a878ce618d13d04cff

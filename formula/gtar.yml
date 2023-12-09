@@ -1,5 +1,5 @@
 summary: GNU version of the tar archiving utility
 webpage: https://www.gnu.org/software/tar
 version: 1.34 
-bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2023.12.08/gtar-1.34-openbsd-7.4-amd64.tar.xz 
-bin-sha: 9d20b4d50a8bd9fc7da6d37acc1385d7c77d6fd8a920a8d5f326e7d02b6e4697
+bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2023.12.09/gtar-1.34-openbsd-7.4-amd64.tar.xz 
+bin-sha: 09e02e4b8887442377eaba57379048ff46c3cbc40810ceeffa24f0310526558d

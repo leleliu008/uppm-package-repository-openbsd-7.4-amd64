@@ -1,5 +1,5 @@
 summary: A popular data compression program developed by GNU
 webpage: https://www.gnu.org/software/gzip
 version: 1.13 
-bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2023.12.08/gzip-1.13-openbsd-7.4-amd64.tar.xz 
-bin-sha: 52eec4a550346cebb7d398a75a48127d82d4287550191441efa16bac14f2fd71
+bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2023.12.09/gzip-1.13-openbsd-7.4-amd64.tar.xz 
+bin-sha: 386a36cec0c17e9298c75ab12363d57d1ac70e1a811893cd82c5e4b48d5a0647

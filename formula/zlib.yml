@@ -1,5 +1,5 @@
 summary: A general purpose data compression library
 webpage: https://zlib.net/
 version: 1.3 
-bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2023.12.08/zlib-1.3-openbsd-7.4-amd64.tar.xz 
-bin-sha: 1218a84e04013b60f3b2ffa68355eba84af72a2cb95a218187e5fc264a818b0d
+bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2023.12.09/zlib-1.3-openbsd-7.4-amd64.tar.xz 
+bin-sha: 50c1e545fdbe631ae19b86cf07a0e66a3667ae23265c819836de4461a52baf07

@@ -1,5 +1,5 @@
 summary: Reimplementation of pkg-config
 webpage: http://pkgconf.org
 version: 2.1.0 
-bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2023.12.08/pkgconf-2.1.0-openbsd-7.4-amd64.tar.xz 
-bin-sha: 404fcdcf00763f7e096cb1a4a6fedf2f5883ecb20d463de9d218d64656a2e1f0
+bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2023.12.09/pkgconf-2.1.0-openbsd-7.4-amd64.tar.xz 
+bin-sha: d0dca2b91682374ddc73f293ed5020fe88061d2cc9ad50fb5772eec0f7cf5174

@@ -1,5 +1,5 @@
 summary: utilities provided by libxml2
 webpage: http://xmlsoft.org
 version: 2.11.4 
-bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2023.12.08/libxml2-utils-2.11.4-openbsd-7.4-amd64.tar.xz 
-bin-sha: a3d017ef67a9619a92b74a7f7f166721826d7dbb0d9466733cd0a4f0b6768fab
+bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2023.12.09/libxml2-utils-2.11.4-openbsd-7.4-amd64.tar.xz 
+bin-sha: f7bd01e4e0a7ffd5d584b4bba92680636d565d565d76087ee6d8629d8a36cf5e

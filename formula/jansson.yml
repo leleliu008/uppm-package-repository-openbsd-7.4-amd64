@@ -1,5 +1,5 @@
 summary: C library for encoding, decoding, and manipulating JSON
 webpage: https://digip.org/jansson
 version: 2.14 
-bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2023.12.08/jansson-2.14-openbsd-7.4-amd64.tar.xz 
-bin-sha: 79ce6eed1f36d970c9a7dbb0c2be0f5b982f0a4432ba09e784eeeb591d6733ad
+bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2023.12.09/jansson-2.14-openbsd-7.4-amd64.tar.xz 
+bin-sha: 262c560962aadac3205c0dc6db9770a3d5b4e7ea406c614edf20ddfbf85b17a9

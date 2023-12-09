@@ -1,5 +1,5 @@
 summary: General-purpose data compression with high compression ratio
 webpage: https://tukaani.org/xz
 version: 5.4.5 
-bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2023.12.08/xz-5.4.5-openbsd-7.4-amd64.tar.xz 
-bin-sha: 78c2cc9c82e15519388e1d89e8519a93978b5488410aec46f5af4a6097f1541f
+bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2023.12.09/xz-5.4.5-openbsd-7.4-amd64.tar.xz 
+bin-sha: 2e3b346f9512a872cadca6b7f7e81277b82a5fb557550dbd45a683d8e00557e7

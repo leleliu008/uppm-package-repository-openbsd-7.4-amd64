@@ -1,5 +1,5 @@
 summary: GNOME XML library
 webpage: http://xmlsoft.org
 version: 2.11.5 
-bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2023.12.08/libxml2-2.11.5-openbsd-7.4-amd64.tar.xz 
-bin-sha: 4449c16b570ecca0f628fe58faad3509e67f020da60187682931903ec46288d8
+bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2023.12.09/libxml2-2.11.5-openbsd-7.4-amd64.tar.xz 
+bin-sha: a80a5d9adda1b5b2a4274f3ca3661c4c53c642bd5d4113f11181685ee95d4f3e

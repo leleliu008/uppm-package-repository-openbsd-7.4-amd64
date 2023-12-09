@@ -1,5 +1,5 @@
 summary: Get a file from an HTTP, HTTPS or FTP server
 webpage: https://curl.haxx.se/
 version: 8.5.0 
-bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2023.12.08/curl-8.5.0-openbsd-7.4-amd64.tar.xz 
-bin-sha: 453a49b696c45175f9e82cbffb95a0a56034d5d4e8506e65272fa0740bdc66f1
+bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2023.12.09/curl-8.5.0-openbsd-7.4-amd64.tar.xz 
+bin-sha: b3d5cc61895cd89b4abd6e2d85f7d7664618b367dc3911a98d120f7747037197

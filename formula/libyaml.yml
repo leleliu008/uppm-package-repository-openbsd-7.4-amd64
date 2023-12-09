@@ -1,5 +1,5 @@
 summary: YAML Parser
 webpage: https://github.com/yaml/libyaml
 version: 0.2.5 
-bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2023.12.08/libyaml-0.2.5-openbsd-7.4-amd64.tar.xz 
-bin-sha: 2c3aa69e6b66ff51634429b810f56992b7f2f8258b6384781ca48d5cb5eba091
+bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2023.12.09/libyaml-0.2.5-openbsd-7.4-amd64.tar.xz 
+bin-sha: 3e7f5dc991ad2fed3621af044d551a4bba109d82459b9382ed752002d7585ad0
