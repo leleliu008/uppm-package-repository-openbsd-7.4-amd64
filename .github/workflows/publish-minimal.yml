@@ -38,7 +38,7 @@ jobs:
 
             PACKAGE_BIN_FILENAME="${{ matrix.pkg }}-$PACKAGE_VERSION-openbsd-7.4-amd64.release.tar.xz"
 
-            SHA256SUM="$(/usr/pkg/bin/gsha256sum "$PACKAGE_BIN_FILENAME")"
+            SHA256SUM="$(/usr/local/bin/gsha256sum "$PACKAGE_BIN_FILENAME")"
 
             PACKAGE_BIN_SHA="${SHA256SUM%%' '*}"
 
