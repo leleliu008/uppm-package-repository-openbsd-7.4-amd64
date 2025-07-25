@@ -1,5 +1,5 @@
 summary: GNU grep, egrep and fgrep
 webpage: https://www.gnu.org/software/grep
-version: 3.11 
-bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2023.12.09/grep-3.11-openbsd-7.4-amd64.tar.xz 
-bin-sha: 0f0461810d4a952f12aeb474bf1ccdae76ff6f0ad7e71491f71113f1bfb109cb
+version: 3.12 
+bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2025.07.25/grep-3.12-openbsd-7.4-amd64.release.tar.xz 
+bin-sha: b07e4c98f2684ef3a1c21e77a09af9c48970d94684b40c8fb5f8d0109f1b6d1e

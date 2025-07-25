@@ -1,5 +1,5 @@
 summary: Macro processing language
 webpage: https://www.gnu.org/software/m4
 version: 1.4.19 
-bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2023.12.09/gm4-1.4.19-openbsd-7.4-amd64.tar.xz 
-bin-sha: 22ce36b1f0c67fa05bab417f3e38788b0877f09196ca873a4cfe4347d9976705
+bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2025.07.25/gm4-1.4.19-openbsd-7.4-amd64.release.tar.xz 
+bin-sha: f5f268eb3efa0af42405f31eac1e73dedbe7ff94a73cc69e0bf2d9fd67bfeb55

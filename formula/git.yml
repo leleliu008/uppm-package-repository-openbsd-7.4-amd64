@@ -1,5 +1,5 @@
-summary: Distributed revision control system
-webpage: https://git-scm.com
-version: 2.42.1
-bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2023.12.08/git-2.42.1-openbsd-7.4-amd64.tar.xz
-bin-sha: 40ff9055dfa2d28d58cbe983d429395a7ef48472563e55d23976c3ac130ff23c
+summary: A free and open source distributed version control system with speed and efficiency
+webpage: https://git-scm.com/
+version: 2.50.0 
+bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2025.07.25/git-2.50.0-openbsd-7.4-amd64.release.tar.xz 
+bin-sha: 68fa329eac1fbb27c4b7add5950a327e383901776b72fbc0d43b86072fd089ed

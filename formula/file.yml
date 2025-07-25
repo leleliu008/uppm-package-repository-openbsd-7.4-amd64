@@ -1,0 +1,5 @@
+summary: A command-line tool to determine file types
+webpage: https://www.darwinsys.com/file
+version: 5.45 
+bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2025.07.25/file-5.45-openbsd-7.4-amd64.release.tar.xz 
+bin-sha: ca947bdd18ff1b974bd4a109bdea637cb97b0b95383ef8c92ae9b270145cbd24

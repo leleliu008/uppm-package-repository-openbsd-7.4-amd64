@@ -1,0 +1,5 @@
+summary: A small man page generator
+webpage: https://sr.ht/~sircmpwn/scdoc/
+version: 1.11.3 
+bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2025.07.25/scdoc-1.11.3-openbsd-7.4-amd64.release.tar.xz 
+bin-sha: 7da29bef4b2daf0b70bdc21a2e5f08031382e12980065b3cf61fb433c8b4c75d

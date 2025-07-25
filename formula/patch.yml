@@ -1,5 +1,5 @@
 summary: Apply a diff file to an original
 webpage: https://savannah.gnu.org/projects/patch
 version: 2.7.6 
-bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2023.12.09/patch-2.7.6-openbsd-7.4-amd64.tar.xz 
-bin-sha: a1a006e3e79f6674f7b8c5bbb5fe8bbe843ed4cf40184e97d450ff9d449c092f
+bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2025.07.25/patch-2.7.6-openbsd-7.4-amd64.release.tar.xz 
+bin-sha: e87ec84216b4fa5b1eed9866d3d0a770eb4ecaa396f5bbd0158a4ba64d426cd1

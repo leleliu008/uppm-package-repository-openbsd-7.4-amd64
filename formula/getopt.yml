@@ -1,0 +1,5 @@
+summary: A command-line option parsing utility
+webpage: https://github.com/util-linux/util-linux
+version: 2.40.4 
+bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2025.07.25/getopt-2.40.4-openbsd-7.4-amd64.release.tar.xz 
+bin-sha: 845dbe0c1027323e1601a731b7ab190fd69bebc27fcfa300a45fd7db424f8bf8

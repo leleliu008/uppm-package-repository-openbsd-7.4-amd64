@@ -1,5 +1,5 @@
 summary: GNU internationalization (i18n) and localization (l10n) library
 webpage: https://www.gnu.org/software/gettext
-version: 0.21.1 
-bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2023.12.09/gettext-tools-0.21.1-openbsd-7.4-amd64.tar.xz 
-bin-sha: a76a0b32b41fef3382350dc2e7b704c540152710a700ac5f147e49793f4e1f22
+version: 0.22.5 
+bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2025.07.25/gettext-tools-0.22.5-openbsd-7.4-amd64.release.tar.xz 
+bin-sha: efffa2c99ecb4c8c49379bb378bdfff4970f06925a265c3e00da6d58540a2452

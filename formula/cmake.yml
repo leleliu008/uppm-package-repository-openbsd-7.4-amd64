@@ -1,5 +1,5 @@
 summary: Cross-platform make
 webpage: https://www.cmake.org/
-version: 3.27.6 
-bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2023.12.09/cmake-3.27.6-openbsd-7.4-amd64.tar.xz 
-bin-sha: 2ade39904bd6c3332eb332e75ca3da3e0c23db010eaf626fb99181b0ead26783
+version: 3.31.7 
+bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2025.07.25/cmake-3.31.7-openbsd-7.4-amd64.release.tar.xz 
+bin-sha: 2ba37e3a902ca04fd4232a1c2b6628219647936398a35edb69bfcef80185f5d3

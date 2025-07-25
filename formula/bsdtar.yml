@@ -1,5 +1,5 @@
 summary: BSD tar
 webpage: https://www.libarchive.org/
-version: 3.7.2 
-bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2023.12.09/bsdtar-3.7.2-openbsd-7.4-amd64.tar.xz 
-bin-sha: 0ff7d7cc7b28a47b67f625ab9847941824af533f75df41eff71f424ee94ec442
+version: 3.8.1 
+bin-url: https://github.com/leleliu008/uppm-package-repository-openbsd-7.4-amd64/releases/download/2025.07.25/bsdtar-3.8.1-openbsd-7.4-amd64.release.tar.xz 
+bin-sha: 78bc7f7bb3dd6da331e05819f9b8e5d27fa52b9767f2420e74f55c3dd0724ae0
